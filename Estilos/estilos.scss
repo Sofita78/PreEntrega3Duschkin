@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Montserrat+Alternates:wght@300500&family=Poppins:wght@300&family=Slabo+27px&display=swap') //Fonts
+$font1: Poppins, sans-serif;
+//Paleta de colores
+$colordelhover: rgba(255, 192, 203, 0.281);
+$colordelafuente: black;
+$colordelfooter: rgb(241, 220, 234);
+$colorsecundario:grey;
+
+//Fuente universal
+* {
+    font-family: $font1
+}
+
+/*Estilos del INDEX/HOME*/
+
+/*Nav*/
+nav {
+    display: flex;
+    flex-wrap: wrap;
+
+        a 
+        list-style: none;
+    transition: background-color 0.5s;
+
+        a:hover 
+        background-color: $colordelhover;
+}
+
+/*Carrusel + Cards*/
+.carrusel {
+    padding: 80px;
+    margin-bottom: 80px;
+
+    .cards display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+/*Footer*/
+footer {
+    text-align: center;
+    margin-top: 20px;
+    background-color: $colordelfooter;
+
+
+    .redes .fa-brands text-align: center;
+    font-size: 35px;
+
+
+    .fa-solid height: 40px;
+    width: 40px;
+    background-color: grey;
+    color: #fff;
+    position: fixed;
+    right: 35px;
+    bottom: 35px;
+    text-align: center;
+    font-size: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px #fff;
+}
+
+/*Estilos de Contacto*/
+/*Form*/
+.mb-3 {
+    margin-right: 20px;
+    margin-left: 20px;
+
+    h1 font-family: $font1;
+    color: $colorsecundario;
+    margin-top: 70px;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+.img5 {
+    margin-top: 25px;
+    width: 15rem;
+    margin-left: 70px;
+
+}
+
+/*Estilos de Herramientas/SkinCare*/
+
+.img7 {
+    margin-top: 25px;
+    width: 15rem;
+    margin-left: 25px;
+    margin-bottom: 35px;
+}

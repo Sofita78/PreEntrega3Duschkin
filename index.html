@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./Estilos/estilos.css">
+
+    <!--Íconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>SOFIA MAKE UP</title>
+</head>
+
+<body>
+    <!-- Nav Bar inicia -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"> <img src="img/Logo.png" alt="Sofia Logo"
+                    style="width: 100px; height: 85px;" class="rounded-bottom">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Secciones/Makeup.html">Makeup</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Kits
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./Secciones/Skincare.html">Skincare</a></li>
+                            <li><a class="dropdown-item" href="./Secciones/Herramientas.html">Herramientas</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">About Us</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Secciones/Contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="¿Qué buscas?" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Nav Bar Fin -->
+
+    <!-- Carrusel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <section class="carrusel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/brochas.jpg" alt="Brochas" style="height: 400px; width: 300px;" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/labialesColores.jpg" alt="Labiales" style="height: 400px; width: 300px;"
+                        class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/mujerNaranja.jpg" alt="Mujer Naranja" style="height: 400px; width: 300px;"
+                        class="d-block w-100">
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+    </div>
+    </section>
+
+
+    <!--Cards-->
+    <section class="cards d-flex justify-content-around">
+        <div class="card" style="width: 15rem;">
+            <img src="img/paletaColores.jpg" class="card-img-top" alt="paletaColores">
+            <div class="card-body">
+                <h5 class="card-title">Make Up</h5>
+                <p class="card-text">Gran variedad de colores para crear un Make Up perfecto</p>
+                <a href="Secciones/Makeup.html" class="btn btn-primary">Hacé click aquí</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 15rem;">
+            <img src="img/mujerRosa.jpg" class="card-img-top" alt="mujerRosa">
+            <div class="card-body">
+                <h5 class="card-title">Herramientas</h5>
+                <p class="card-text2">Diferentes brochas, pinceles y accesorios para tu Make Up</p>
+                <a href="Secciones/Herramientas.html" class="btn btn-primary">Hacé click aquí</a>
+            </div>
+        </div>
+
+
+        <div class="card" style="width: 15rem;">
+            <img src="img/balsamo.jpg" class="card-img-top" alt="balsamo">
+            <div class="card-body">
+                <h5 class="card-title">Skin Care</h5>
+                <p class="card-text">Cuidá tu piel con los mejores productos</p>
+                <a href="Secciones/Skincare.html" class="btn btn-primary">Hacé click aquí</a>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <div>
+            <p>Copyright Sofia Make Up</p>
+        </div>
+
+        <div class="redes">
+            <a href="#">
+                <i class="fa-brands fa-instagram" style="color: black"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-whatsapp" style="color:  black"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-youtube" style="color:  black"></i>
+            </a>
+        </div>
+    </footer>
+    <a href="#">
+        <i class="fa-sharp fa-solid fa-chevron-up"></i>
+    </a>
+
+    <a href="#">
+        <i class="fa-sharp fa-solid fa-chevron-up"></i>
+    </a>
+
+
+
+    <!--Cierre de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
